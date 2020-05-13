@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RegistrationView.swift
 //  UserRegistration
 //
 //  Created by Puneet Personal on 13.05.20.
@@ -8,8 +8,10 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct RegistrationView: View {
     // MARK: - Propertiers
+    @State private var firstName = ""
+    @State private var lastName = ""
     @State private var email = ""
     @State private var password = ""
     @State var tag: Int? = nil
@@ -21,7 +23,7 @@ struct LoginView: View {
                 NavigationLink(destination: RegistrationView(), tag: 1, selection: $tag) {
                     EmptyView()
                 }
-                Text("Welcome User!")
+                Text("Create Your Account!")
                     .font(.largeTitle).foregroundColor(Color.white)
                     .padding([.top, .bottom], 40)
                     .shadow(radius: 10.0, x: 20, y: 10)
@@ -35,6 +37,18 @@ struct LoginView: View {
                     .padding(.bottom, 50)
                 
                 VStack(alignment: .leading, spacing: 15) {
+                    TextField("firstName", text: self.$firstName)
+                    .padding()
+                    .background(Color.themeTextField)
+                    .cornerRadius(20.0)
+                    .shadow(radius: 10.0, x: 20, y: 10)
+                    
+                    TextField("lastName", text: self.$lastName)
+                    .padding()
+                    .background(Color.themeTextField)
+                    .cornerRadius(20.0)
+                    .shadow(radius: 10.0, x: 20, y: 10)
+                    
                     TextField("Email", text: self.$email)
                         .padding()
                         .background(Color.themeTextField)
@@ -61,12 +75,12 @@ struct LoginView: View {
                 
                 Spacer()
                 HStack(spacing: 0) {
-                    Text("Don't have an account? ")
+                    Text("Already have an account? ")
                     
                         Button(action: {
-                            self.tag = 1
+                            self.tag = 1A
                         }) {
-                            Text("Sign Up")
+                            Text("Sign In")
                             .bold()
                             .foregroundColor(.black)
                         }
@@ -77,17 +91,5 @@ struct LoginView: View {
                     .edgesIgnoringSafeArea(.all))
         }
         
-    }
-}
-
-extension Color {
-    static var themeTextField: Color {
-        return Color(red: 220.0/255.0, green: 230.0/255.0, blue: 230.0/255.0, opacity: 1.0)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        Text("Welcome..!!")
     }
 }
