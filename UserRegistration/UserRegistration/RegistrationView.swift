@@ -78,7 +78,7 @@ struct RegistrationView: View {
                     Text("Already have an account? ")
                     
                         Button(action: {
-                            self.tag = 1A
+                            self.tag = 1
                         }) {
                             Text("Sign In")
                             .bold()
