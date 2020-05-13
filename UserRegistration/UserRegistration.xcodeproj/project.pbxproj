@@ -19,6 +19,8 @@
 		8EC29696246C0B5100ADC662 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC29695246C0B5100ADC662 /* APIManager.swift */; };
 		8EC29699246C0CAB00ADC662 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8EC29698246C0CAB00ADC662 /* Alamofire */; };
 		8EC2969B246C0FC500ADC662 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2969A246C0FC500ADC662 /* RegistrationView.swift */; };
+		8EC2969D246C3C5B00ADC662 /* LabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2969C246C3C5B00ADC662 /* LabelTextField.swift */; };
+		8EC2969F246C883800ADC662 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2969E246C883800ADC662 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		8EC29692246C0ABC00ADC662 /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 		8EC29695246C0B5100ADC662 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		8EC2969A246C0FC500ADC662 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		8EC2969C246C3C5B00ADC662 /* LabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextField.swift; sourceTree = "<group>"; };
+		8EC2969E246C883800ADC662 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 				8EC29679246BF89F00ADC662 /* SceneDelegate.swift */,
 				8EC2967E246BF89F00ADC662 /* ContentView.swift */,
 				8EC2969A246C0FC500ADC662 /* RegistrationView.swift */,
+				8EC2969C246C3C5B00ADC662 /* LabelTextField.swift */,
 				8EC29691246C0AA200ADC662 /* Model */,
 				8EC2968E246C08EC00ADC662 /* Constant */,
 				8EC29680246BF8A400ADC662 /* Assets.xcassets */,
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				8EC29692246C0ABC00ADC662 /* RegistrationModel.swift */,
+				8EC2969E246C883800ADC662 /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,9 +204,11 @@
 				8EC29693246C0ABC00ADC662 /* RegistrationModel.swift in Sources */,
 				8EC29690246C090800ADC662 /* Constant.swift in Sources */,
 				8EC2967F246BF89F00ADC662 /* ContentView.swift in Sources */,
+				8EC2969F246C883800ADC662 /* LoginModel.swift in Sources */,
 				8EC2967D246BF89F00ADC662 /* UserRegistration.xcdatamodeld in Sources */,
 				8EC29696246C0B5100ADC662 /* APIManager.swift in Sources */,
 				8EC2969B246C0FC500ADC662 /* RegistrationView.swift in Sources */,
+				8EC2969D246C3C5B00ADC662 /* LabelTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,17 +344,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UserRegistration/Preview Content\"";
 				DEVELOPMENT_TEAM = L798UUDWH7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = UserRegistration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = puneet.UserRegistration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personaldemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -356,17 +367,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UserRegistration/Preview Content\"";
 				DEVELOPMENT_TEAM = L798UUDWH7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = UserRegistration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = puneet.UserRegistration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personaldemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

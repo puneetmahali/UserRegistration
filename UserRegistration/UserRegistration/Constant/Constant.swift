@@ -13,5 +13,6 @@ import Foundation
 
 let app_Id = "39AC9024-E7C7-2E0C-FFF6-7132F74D8400"
 let restAPI_Key = "90FC3EF5-D808-448F-8D32-501E3F2D7F0E"
-let base_Url = "https://api.backendless.com/application-id/REST-api-key/users"
+let base_Url = "https://api.backendless.com/\(app_Id)/\(restAPI_Key)/users"
 let register_Url = "\(base_Url)/register"
+let login_Url = "\(base_Url)/login"

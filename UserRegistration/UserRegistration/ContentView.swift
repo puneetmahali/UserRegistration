@@ -10,8 +10,8 @@ import SwiftUI
 
 struct LoginView: View {
     // MARK: - Propertiers
-    @State private var email = ""
-    @State private var password = ""
+    @State public var email = ""
+    @State public var password = ""
     @State var tag: Int? = nil
     
     // MARK: - View
@@ -23,7 +23,7 @@ struct LoginView: View {
                 }
                 Text("Welcome User!")
                     .font(.largeTitle).foregroundColor(Color.white)
-                    .padding([.top, .bottom], 40)
+                    .padding([.top, .bottom], 5)
                     .shadow(radius: 10.0, x: 20, y: 10)
                 
                 Image("userImage")
@@ -48,7 +48,10 @@ struct LoginView: View {
                         .shadow(radius: 10.0, x: 20, y: 10)
                 }.padding([.leading, .trailing], 27.5)
                 
-                Button(action: {print("Puneet")}) {
+                Button(action: {
+                    print("Puneet")
+                    self.onLoginBtn()
+                }) {
                     Text("Sign In")
                         .font(.headline)
                         .foregroundColor(.white)
@@ -78,7 +81,26 @@ struct LoginView: View {
         }
         
     }
+    
+    
+    func onLoginBtn() {
+        let login = LoginModel(login: email, password: password)
+        APIManager.sharedInstance.userLogInAPI(login: login) {
+            (isSuccess) in
+            if isSuccess {
+                let alert = UIAlertController()
+                alert.title = "Alert"
+                alert.message = "User Register Succesfully."
+            }else {
+                let alert = UIAlertController()
+                alert.title = "Alert"
+                alert.message = "Pease try again!"
+                
+            }
+        }
+    }
 }
+
 
 extension Color {
     static var themeTextField: Color {
