@@ -21,14 +21,18 @@ struct LoginView: View {
                 NavigationLink(destination: RegistrationView(), tag: 1, selection: $tag) {
                     EmptyView()
                 }
-                Text("Welcome User!")
+                Text("Welcome!")
                     .font(.largeTitle).foregroundColor(Color.white)
                     .padding([.top, .bottom], 5)
                     .shadow(radius: 10.0, x: 20, y: 10)
+                Text("Get the best from this app")
+                    .font(.subheadline).foregroundColor(Color.white)
+                .padding([.top, .bottom], 5)
+                .shadow(radius: 10.0, x: 20, y: 10)
                 
                 Image("userImage")
                     .resizable()
-                    .frame(width: 250, height: 250)
+                    .frame(width: 150, height: 150)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
                     .shadow(radius: 10.0, x: 20, y: 10)
@@ -49,7 +53,6 @@ struct LoginView: View {
                 }.padding([.leading, .trailing], 27.5)
                 
                 Button(action: {
-                    print("Puneet")
                     self.onLoginBtn()
                 }) {
                     Text("Sign In")
@@ -65,7 +68,6 @@ struct LoginView: View {
                 Spacer()
                 HStack(spacing: 0) {
                     Text("Don't have an account? ")
-                    
                         Button(action: {
                             self.tag = 1
                         }) {
@@ -108,8 +110,8 @@ extension Color {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        Text("Welcome..!!")
+        LoginView()
     }
 }

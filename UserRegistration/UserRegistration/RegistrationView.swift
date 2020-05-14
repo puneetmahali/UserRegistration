@@ -15,6 +15,7 @@ struct RegistrationView: View {
     @State private var email = ""
     @State private var password = ""
     @State var tag: Int? = nil
+    //@State private var showingAlert = false
     
     // MARK: - View
     var body: some View {
@@ -94,13 +95,10 @@ struct RegistrationView: View {
         APIManager.sharedInstance.userRegistartionAPI(register: register) {
             (isSuccess) in
             if isSuccess {
-                let alert = UIAlertController()
-                alert.title = "Alert"
-                alert.message = "User Register Succesfully."
+                    //Alert(title: Text("Alert message"), message: Text("User Register Succesfully."), dismissButton: .default(Text("Got it!")))
+
             }else {
-                let alert = UIAlertController()
-                alert.title = "Alert"
-                alert.message = "Pease try again!"
+                //Alert(title: Text("Alert message"), message: Text("Pease try again!"), dismissButton: .default(Text("Got it!")))
                 
             }
         }

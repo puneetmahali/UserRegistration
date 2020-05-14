@@ -10,7 +10,7 @@
 		8EC29678246BF89F00ADC662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC29677246BF89F00ADC662 /* AppDelegate.swift */; };
 		8EC2967A246BF89F00ADC662 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC29679246BF89F00ADC662 /* SceneDelegate.swift */; };
 		8EC2967D246BF89F00ADC662 /* UserRegistration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2967B246BF89F00ADC662 /* UserRegistration.xcdatamodeld */; };
-		8EC2967F246BF89F00ADC662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2967E246BF89F00ADC662 /* ContentView.swift */; };
+		8EC2967F246BF89F00ADC662 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC2967E246BF89F00ADC662 /* LoginView.swift */; };
 		8EC29681246BF8A400ADC662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29680246BF8A400ADC662 /* Assets.xcassets */; };
 		8EC29684246BF8A400ADC662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29683246BF8A400ADC662 /* Preview Assets.xcassets */; };
 		8EC29687246BF8A400ADC662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC29685246BF8A400ADC662 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 		8EC29677246BF89F00ADC662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EC29679246BF89F00ADC662 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8EC2967C246BF89F00ADC662 /* UserRegistration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserRegistration.xcdatamodel; sourceTree = "<group>"; };
-		8EC2967E246BF89F00ADC662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8EC2967E246BF89F00ADC662 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8EC29680246BF8A400ADC662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC29683246BF8A400ADC662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8EC29686246BF8A400ADC662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			children = (
 				8EC29677246BF89F00ADC662 /* AppDelegate.swift */,
 				8EC29679246BF89F00ADC662 /* SceneDelegate.swift */,
-				8EC2967E246BF89F00ADC662 /* ContentView.swift */,
+				8EC2967E246BF89F00ADC662 /* LoginView.swift */,
 				8EC2969A246C0FC500ADC662 /* RegistrationView.swift */,
 				8EC2969C246C3C5B00ADC662 /* LabelTextField.swift */,
 				8EC29691246C0AA200ADC662 /* Model */,
@@ -203,7 +203,7 @@
 				8EC2967A246BF89F00ADC662 /* SceneDelegate.swift in Sources */,
 				8EC29693246C0ABC00ADC662 /* RegistrationModel.swift in Sources */,
 				8EC29690246C090800ADC662 /* Constant.swift in Sources */,
-				8EC2967F246BF89F00ADC662 /* ContentView.swift in Sources */,
+				8EC2967F246BF89F00ADC662 /* LoginView.swift in Sources */,
 				8EC2969F246C883800ADC662 /* LoginModel.swift in Sources */,
 				8EC2967D246BF89F00ADC662 /* UserRegistration.xcdatamodeld in Sources */,
 				8EC29696246C0B5100ADC662 /* APIManager.swift in Sources */,
